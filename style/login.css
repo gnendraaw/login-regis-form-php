@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: unset;
+}
+
+body 
+{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+section 
+{
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    /* border-radius: 8px; */
+    box-shadow: 4px 4px 24px rgba(0,0,0,0.1);
+}
+
+.container 
+{
+    height: 100%;
+    width: 50%;
+    /* background: red; */
+}
+
+.container .box 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    height: 100%;
+    width: 100%;
+}
+
+.container:nth-child(1)
+{
+    background: #7868E6;
+}
+
+.box img 
+{
+    max-width: 60%;
+}
+
+.container .box .form-area 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    /* background: red; */
+}
+
+.form-area .title 
+{
+    margin: 0 0 64px 0;
+    width: 100%;
+}
+
+.form-area .title h2 
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: #7868E6;
+    text-align: left;
+}
+
+.form-area form 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+form .input-field 
+{
+    width: 100%;
+    margin: 0 0 32px 0;
+}
+
+.input-field .text 
+{
+    color: rgba(0,0,0,.3);
+    font-size: 14px;
+}
+
+.input-field input 
+{
+    border: none;
+    outline: none;
+    color: #7868E6;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+.input-field .underline
+{
+    width: 100%;
+    height: 1px;
+    background: #7868E6;
+    border-radius: 1px;
+}
+
+.form-area input[type="submit"]
+{
+    text-align: center;
+    width: 75%;
+    padding: 16px;
+    border: unset;
+    outline: unset;
+    font-size: 14px;
+    background: #7868E6;
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,.1);
+    cursor: pointer;
+    /* margin: 16px 0; */
+    
+    transition: 0.2s;
+}
+
+.form-area input[type="submit"]:hover 
+{
+    transform: translate(0,-5px);
+}
+
+.form-area input[type="submit"]:active  
+{
+    transform: scale(.9,.9);
+}
+
+.form-area .forget 
+{
+    font-size: 12px;
+}
+
+.forget a 
+{
+    color: #7868E6;
+    text-decoration: unset;
+    font-weight: 600;
+}
